@@ -1,0 +1,222 @@
+2017-01-22 03:36:59 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'parkir lot' in C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\parkir\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'parkir lot' in C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\parkir\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-01-22 03:36:59 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Nukman\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NUKMAN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Nukman'
+    'http_proxy' => 'localhost/prototype_bengkel'
+    'include' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\atl\\include;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\mfc\\include;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\include'
+    'lib' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\mfc\\lib;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\lib'
+    'LOCALAPPDATA' => 'C:\\Users\\Nukman\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NUKMAN-PC'
+    'MSDevDir' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\MSDev98'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\Tools\\WinNT;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\MSDev98\\Bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\bin;C:\\Users\\Nukman\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 37 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PT6HOME' => 'C:\\Program Files (x86)\\Cisco Packet Tracer 6.2sv'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Nukman\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Nukman\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Nukman-PC'
+    'USERNAME' => 'Nukman'
+    'USERPROFILE' => 'C:\\Users\\Nukman'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\parkir\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1485052619.2802
+    'REQUEST_TIME' => 1485052619
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\parkir\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-01-22 03:38:00 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'parkir lot' in C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\parkir\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'parkir lot' in C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\parkir\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\parkir\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-01-22 03:38:00 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Nukman\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NUKMAN-PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Nukman'
+    'http_proxy' => 'localhost/prototype_bengkel'
+    'include' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\atl\\include;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\mfc\\include;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\include'
+    'lib' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\mfc\\lib;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\lib'
+    'LOCALAPPDATA' => 'C:\\Users\\Nukman\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NUKMAN-PC'
+    'MSDevDir' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\MSDev98'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Broadcom\\Broadcom 802.11\\Driver;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\Tools\\WinNT;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\MSDev98\\Bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\Common\\Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\VC98\\bin;C:\\Users\\Nukman\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 37 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '2502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PT6HOME' => 'C:\\Program Files (x86)\\Cisco Packet Tracer 6.2sv'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Nukman\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Nukman\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'Nukman-PC'
+    'USERNAME' => 'Nukman'
+    'USERPROFILE' => 'C:\\Users\\Nukman'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\parkir\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\parkir\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1485052680.3577
+    'REQUEST_TIME' => 1485052680
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\parkir\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
